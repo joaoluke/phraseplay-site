@@ -1,0 +1,25 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0B1020"/>
+  
+  <!-- Gradient overlay -->
+  <rect width="1200" height="630" fill="url(#gradient)" opacity="0.3"/>
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Logo icon -->
+  <circle cx="600" cy="240" r="80" fill="#7C3AED"/>
+  <path d="M575 210L640 240L575 270V210Z" fill="white"/>
+  
+  <!-- Text -->
+  <text x="600" y="380" font-family="Inter, sans-serif" font-size="64" font-weight="700" fill="#F8FAFC" text-anchor="middle">
+    PhrasePlay
+  </text>
+  <text x="600" y="440" font-family="Inter, sans-serif" font-size="28" font-weight="400" fill="#94A3B8" text-anchor="middle">
+    Aprenda idiomas ouvindo como você vive
+  </text>
+</svg>

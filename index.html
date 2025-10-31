@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprenda inglês e português de forma natural ouvindo playlists bilíngues. Frases curtas, voz realista, temas do seu dia a dia. Baixe já.">
+  
+  <!-- SEO -->
+  <title>PhrasePlay — Aprendizado natural com playlists bilíngues</title>
+  <meta name="keywords" content="aprender inglês, português, playlists, áudio, idiomas, frases">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="PhrasePlay — Aprendizado natural com playlists bilíngues">
+  <meta property="og:description" content="Aprenda inglês e português de forma natural ouvindo playlists bilíngues. Frases curtas, voz realista, temas do seu dia a dia.">
+  <meta property="og:image" content="./assets/og-image.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://phraseplay.app">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PhrasePlay — Aprendizado natural com playlists bilíngues">
+  <meta name="twitter:description" content="Aprenda inglês e português de forma natural ouvindo playlists bilíngues.">
+  <meta name="twitter:image" content="./assets/og-image.svg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <!-- Header fixo -->
+  <header class="header" id="header">
+    <div class="container header-content">
+      <a href="#" class="logo" aria-label="PhrasePlay - Home">
+        <img src="./assets/logo.svg" alt="PhrasePlay" width="180" height="48">
+      </a>
+      
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-expanded="false" aria-label="Abrir menu">
+        <span class="hamburger"></span>
+      </button>
+      
+      <nav class="nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#recursos" class="nav-link">Recursos</a></li>
+          <li><a href="#como-funciona" class="nav-link">Como funciona</a></li>
+          <li><a href="#preco" class="nav-link">Preço</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+            <svg class="theme-icon theme-icon-dark" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 2v2m0 12v2M4.22 4.22l1.42 1.42m8.72 8.72l1.42 1.42M2 10h2m12 0h2M4.22 15.78l1.42-1.42m8.72-8.72l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <svg class="theme-icon theme-icon-light" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M17 10.5A7 7 0 1 1 9.5 3a6 6 0 0 0 7.5 7.5z" fill="currentColor"/>
+            </svg>
+          </button>
+          <!-- EDITAR: Link de download do Android -->
+          <a href="#" class="btn btn-secondary">Baixar para Android</a>
+          <!-- EDITAR: Link para lista de espera -->
+          <a href="#lista-espera" class="btn btn-primary">Entrar na lista</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Aprenda idiomas ouvindo como você vive</h1>
+          <p class="hero-subtitle">Playlists de frases em inglês e português, com vozes naturais e temas do seu dia a dia.</p>
+          
+          <div class="hero-cta">
+            <!-- EDITAR: Link de download do Android -->
+            <a href="#" class="btn btn-primary btn-lg">Baixar para Android</a>
+            <a href="#playlists" class="btn btn-secondary btn-lg">Ver playlists de exemplo</a>
+          </div>
+          
+          <div class="hero-badges">
+            <div class="badge">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM7 9l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Sem anúncios</span>
+            </div>
+            <div class="badge">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 2v16m-8-8h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Conteúdo atualizado</span>
+            </div>
+            <div class="badge">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M3 10h14M10 3v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>Modo offline (em breve)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="mockup">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="80" fill="url(#heroGradient)"/>
+              <defs>
+                <linearGradient id="heroGradient" x1="0" y1="0" x2="200" y2="200">
+                  <stop offset="0%" stop-color="#7C3AED"/>
+                  <stop offset="100%" stop-color="#6D28D9"/>
+                </linearGradient>
+              </defs>
+              <!-- Ícone de fone de ouvido -->
+              <path d="M100 60C77.9 60 60 77.9 60 100v20c0 5.5 4.5 10 10 10h10v-20c0-11 9-20 20-20s20 9 20 20v20h10c5.5 0 10-4.5 10-10v-20c0-22.1-17.9-40-40-40z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recursos -->
+    <section class="section" id="recursos">
+      <div class="container">
+        <h2 class="section-title">Por que PhrasePlay?</h2>
+        <p class="section-subtitle">Aprenda de forma natural, no seu ritmo, com tecnologia de ponta.</p>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M20 8v24M8 20h24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Playlists bilíngues</h3>
+            <p class="feature-description">Frases curtas em inglês e português, com tradução imediata para fixação natural.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="15" r="5" fill="currentColor"/>
+                <path d="M10 30c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Vozes naturais</h3>
+            <p class="feature-description">Qualidade semelhante a estúdios profissionais, para uma experiência realista.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M20 10L15 20h10l-5 10" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Algoritmo Next Playlist</h3>
+            <p class="feature-description">Recomendação contínua e inteligente do próximo tema para você nunca parar de aprender.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="3"/>
+                <path d="M20 14v6l4 4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Aprenda no seu ritmo</h3>
+            <p class="feature-description">Sessões rápidas de 5–15 minutos, onde e quando você quiser.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect x="8" y="12" width="24" height="16" rx="2" stroke="currentColor" stroke-width="3"/>
+                <path d="M12 8v4m16-4v4M8 18h24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Temas do cotidiano</h3>
+            <p class="feature-description">Trabalho, estudos, viagens, esportes e muito mais. Conteúdo relevante para sua vida.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M30 20c0 5.5-4.5 10-10 10s-10-4.5-10-10 4.5-10 10-10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <path d="M20 10v10h10" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Baixo custo</h3>
+            <p class="feature-description">Acesso completo por PIX a partir de apenas R$ 5–7 por mês.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section class="section section-alt" id="como-funciona">
+      <div class="container">
+        <h2 class="section-title">Como funciona?</h2>
+        <p class="section-subtitle">Três passos simples para começar a aprender agora.</p>
+        
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Escolha um tema que você ama</h3>
+            <p class="step-description">Futebol, viagens, tecnologia, filmes... O que você curte!</p>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Dê play: frases curtas em inglês + português</h3>
+            <p class="step-description">Ouça a frase em inglês, depois em português. Simples e eficaz.</p>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Salve, repita e avance com recomendações inteligentes</h3>
+            <p class="step-description">Marque favoritas, revise quando quiser e descubra novos temas automaticamente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playlists de exemplo -->
+    <section class="section" id="playlists">
+      <div class="container">
+        <h2 class="section-title">Playlists de exemplo</h2>
+        <p class="section-subtitle">Veja alguns dos temas disponíveis para você começar.</p>
+        
+        <div class="playlists-grid">
+          <div class="playlist-card" data-playlist="conversacao">
+            <div class="playlist-image">
+              <svg width="100%" height="200" viewBox="0 0 300 200" fill="none">
+                <rect width="300" height="200" fill="url(#grad1)"/>
+                <defs>
+                  <linearGradient id="grad1" x1="0" y1="0" x2="300" y2="200">
+                    <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#6D28D9" stop-opacity="0.8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3 class="playlist-title">Conversação Básica — Cumprimentos</h3>
+            <button class="btn btn-text" aria-label="Ver exemplos de frases">Ver exemplos →</button>
+          </div>
+          
+          <div class="playlist-card" data-playlist="viagem">
+            <div class="playlist-image">
+              <svg width="100%" height="200" viewBox="0 0 300 200" fill="none">
+                <rect width="300" height="200" fill="url(#grad2)"/>
+                <defs>
+                  <linearGradient id="grad2" x1="0" y1="0" x2="300" y2="200">
+                    <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#2563EB" stop-opacity="0.8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3 class="playlist-title">Viagem — Aeroporto e Hotel</h3>
+            <button class="btn btn-text" aria-label="Ver exemplos de frases">Ver exemplos →</button>
+          </div>
+          
+          <div class="playlist-card" data-playlist="esportes">
+            <div class="playlist-image">
+              <svg width="100%" height="200" viewBox="0 0 300 200" fill="none">
+                <rect width="300" height="200" fill="url(#grad3)"/>
+                <defs>
+                  <linearGradient id="grad3" x1="0" y1="0" x2="300" y2="200">
+                    <stop offset="0%" stop-color="#10B981" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#059669" stop-opacity="0.8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3 class="playlist-title">Esportes — Futebol (Brasileirão)</h3>
+            <button class="btn btn-text" aria-label="Ver exemplos de frases">Ver exemplos →</button>
+          </div>
+          
+          <div class="playlist-card" data-playlist="trabalho">
+            <div class="playlist-image">
+              <svg width="100%" height="200" viewBox="0 0 300 200" fill="none">
+                <rect width="300" height="200" fill="url(#grad4)"/>
+                <defs>
+                  <linearGradient id="grad4" x1="0" y1="0" x2="300" y2="200">
+                    <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#D97706" stop-opacity="0.8"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3 class="playlist-title">Trabalho — Reuniões e E-mails</h3>
+            <button class="btn btn-text" aria-label="Ver exemplos de frases">Ver exemplos →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal de exemplo de frases -->
+    <div class="modal" id="playlistModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+      <div class="modal-overlay" id="modalOverlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Fechar">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M6 6l12 12m0-12L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <h3 class="modal-title" id="modalTitle">Exemplos de frases</h3>
+        <div class="modal-phrases" id="modalPhrases"></div>
+      </div>
+    </div>
+
+    <!-- Preço -->
+    <section class="section section-alt" id="preco">
+      <div class="container">
+        <h2 class="section-title">Preço simples e justo</h2>
+        <p class="section-subtitle">Acesso completo por um valor que cabe no seu bolso.</p>
+        
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <div class="pricing-price">R$ 5–7<span>/mês</span></div>
+            <p class="pricing-method">Pagamento via PIX</p>
+          </div>
+          <ul class="pricing-features">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16 6L8 14l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Acesso completo a todas as playlists
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16 6L8 14l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Atualizações contínuas de conteúdo
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16 6L8 14l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Suporte prioritário
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M16 6L8 14l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Sem anúncios, sem surpresas
+            </li>
+          </ul>
+          <!-- EDITAR: Link para formulário/contato -->
+          <a href="#lista-espera" class="btn btn-primary btn-lg">Quero começar por R$ 5–7</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">O que estão dizendo</h2>
+        
+        <div class="testimonials">
+          <div class="testimonial">
+            <p class="testimonial-text">"Finalmente um app de idiomas que não parece tarefa de casa. Aprendo enquanto faço minhas caminhadas!"</p>
+            <div class="testimonial-author">
+              <strong>Ana Silva</strong>
+              <span>Estudante de Marketing</span>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <p class="testimonial-text">"As playlists de futebol me ajudaram demais a entender os narradores em inglês. Muito bom!"</p>
+            <div class="testimonial-author">
+              <strong>Carlos Mendes</strong>
+              <span>Analista de TI</span>
+            </div>
+          </div>
+          
+          <div class="testimonial">
+            <p class="testimonial-text">"Preço justo e conteúdo de qualidade. Recomendo para todos que querem aprender de forma natural."</p>
+            <div class="testimonial-author">
+              <strong>Beatriz Costa</strong>
+              <span>Designer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <h2 class="section-title">Perguntas frequentes</h2>
+        
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Preciso de internet para usar?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Atualmente, sim. O PhrasePlay funciona via streaming. Estamos trabalhando no modo offline, que será lançado em breve.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Tem anúncios?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Não! O PhrasePlay é 100% livre de anúncios. Você paga um valor justo e tem acesso completo ao conteúdo.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>É adequado para iniciantes?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Temos playlists para todos os níveis, desde iniciantes absolutos até níveis intermediários e avançados (A1–C1).</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Como funciona o pagamento?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Você paga via PIX mensal. Os detalhes de valores e renovação serão definidos na hora da inscrição.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Tem versão para iOS?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Ainda não. Estamos focando no Android primeiro. A versão iOS será desenvolvida assim que tivermos recursos disponíveis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="section cta-section" id="lista-espera">
+      <div class="container">
+        <h2 class="section-title">Pronto para aprender ouvindo?</h2>
+        <p class="section-subtitle">Baixe o app ou entre na lista de espera para novidades e lançamentos.</p>
+        
+        <div class="cta-content">
+          <!-- EDITAR: Link de download do Android -->
+          <a href="#" class="btn btn-primary btn-lg">Baixar para Android</a>
+          
+          <div class="cta-divider">ou</div>
+          
+          <form class="waitlist-form" id="waitlistForm">
+            <input type="text" name="name" placeholder="Seu nome" required aria-label="Seu nome">
+            <input type="email" name="email" placeholder="Seu e-mail" required aria-label="Seu e-mail">
+            <!-- EDITAR: Endpoint do formulário -->
+            <button type="submit" class="btn btn-primary">Entrar na Lista</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="./assets/logo.svg" alt="PhrasePlay" width="150" height="40">
+        <p>Aprenda idiomas ouvindo como você vive.</p>
+      </div>
+      
+      <div class="footer-links">
+        <a href="#">Termos de Uso</a>
+        <a href="#">Privacidade</a>
+        <!-- EDITAR: E-mail de contato -->
+        <a href="mailto:contato@phraseplay.app">Contato</a>
+      </div>
+      
+      <div class="footer-copy">
+        <p>© PhrasePlay, 2025. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
