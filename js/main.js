@@ -83,8 +83,8 @@ const translations = {
       title: 'Playlists de exemplo',
       subtitle: 'Veja alguns dos temas disponíveis para você começar.',
       conversationTitle: 'Conversação Básica — Cumprimentos',
-      travelTitle: 'Viagem — Aeroporto e Hotel',
-      sportsTitle: 'Esportes — Futebol (Brasileirão)',
+      travelTitle: 'Passeio com o dog — Parque e rua',
+      studyTitle: 'Universidade — Trabalhos e aulas',
       workTitle: 'Trabalho — Reuniões e E-mails',
       viewExamples: 'Ver exemplos →',
       viewExamplesAria: 'Ver exemplos de frases',
@@ -205,8 +205,8 @@ const translations = {
       title: 'Sample playlists',
       subtitle: 'Check out some themes you can start with.',
       conversationTitle: 'Basic Conversation — Greetings',
-      travelTitle: 'Travel — Airport & Hotel',
-      sportsTitle: 'Sports — Soccer (Brazil League)',
+      travelTitle: 'Dog walk — Park & street',
+      studyTitle: 'University — Assignments & classes',
       workTitle: 'Work — Meetings & Emails',
       viewExamples: 'See examples →',
       viewExamplesAria: 'See sample phrases',
@@ -538,7 +538,7 @@ const playlistData = {
   },
   viagem: {
     titleKey: 'playlists.travelTitle',
-    defaultTitle: 'Viagem — Aeroporto e Hotel',
+    defaultTitle: 'Passeio com o dog — Parque e rua',
     phrases: [
       { en: 'Where is the check-in counter?', pt: 'Onde fica o balcão de check-in?' },
       { en: 'I have a reservation.', pt: 'Eu tenho uma reserva.' },
@@ -547,15 +547,15 @@ const playlistData = {
       { en: 'Is breakfast included?', pt: 'O café da manhã está incluído?' }
     ]
   },
-  esportes: {
-    titleKey: 'playlists.sportsTitle',
-    defaultTitle: 'Esportes — Futebol (Brasileirão)',
+  estudos: {
+    titleKey: 'playlists.studyTitle',
+    defaultTitle: 'Universidade — Trabalhos e aulas',
     phrases: [
-      { en: 'What a goal!', pt: 'Que golaço!' },
-      { en: 'The match is tied.', pt: 'O jogo está empatado.' },
-      { en: 'Red card for the defender!', pt: 'Cartão vermelho para o zagueiro!' },
-      { en: 'Amazing save by the goalkeeper!', pt: 'Defesa incrível do goleiro!' },
-      { en: 'Who is your favorite team?', pt: 'Qual é o seu time favorito?' }
+      { en: 'Did you finish the assignment for tomorrow?', pt: 'Você terminou o trabalho para amanhã?' },
+      { en: 'The professor moved the deadline to Monday.', pt: 'O professor mudou o prazo para segunda-feira.' },
+      { en: 'Let’s review the notes before class.', pt: 'Vamos revisar as anotações antes da aula.' },
+      { en: 'I need to print my presentation slides.', pt: 'Preciso imprimir meus slides da apresentação.' },
+      { en: 'Can we meet at the library later?', pt: 'Podemos nos encontrar na biblioteca mais tarde?' }
     ]
   },
   trabalho: {
